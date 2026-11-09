@@ -1,18 +1,4 @@
---[[
-    NEMESIS HUB - Premium Loader
-    https://github.com/x4zu/premium
-
-    The communityCreators table is edited by the dashboard (nemesishub.xyz/admin).
-    Keep the "local communityCreators = {" line, one entry per line, and the closing "}"
-    on its own line, or the dashboard cannot read the table.
-]]
-
-repeat task.wait() until game:IsLoaded()
-local Players = game:GetService("Players")
-repeat task.wait() until Players.LocalPlayer
-
 local creatorId = game.CreatorId
-
 local communityCreators = {
     [8818124]    = 'https://api.luarmor.net/files/v4/loaders/3e087d3dde490fa19b372d861dcafeee.lua', -- Violance District
     [186538912]    = 'https://api.luarmor.net/files/v4/loaders/3ea26ea572fa2128170cab697836e8e0.lua', -- One Shot
