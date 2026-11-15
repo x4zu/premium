@@ -11,6 +11,7 @@ local communityCreators = {
     [879801276]    = 'https://api.luarmor.net/files/v4/loaders/cc16ba20061be682a1a93ef0b9d9884a.lua', -- GrowBlox
     [830944259]    = 'https://api.luarmor.net/files/v4/loaders/3035078b088fb27c36df708c5ff9e779.lua', -- Rod And Reef
     [35489258]    = 'https://api.luarmor.net/files/v4/loaders/7b6150609409a7dd8ef50fa6b809d6c2.lua', -- The Forge x
+    [7381705]    = 'https://api.luarmor.net/files/v4/loaders/19ceba576f0db00e9c0262328397980c.lua', -- Fisch COMPANION HATS
 }
 
 local url = communityCreators[creatorId]
