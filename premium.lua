@@ -13,6 +13,7 @@ local communityCreators = {
     [35489258]    = 'https://api.luarmor.net/files/v4/loaders/7b6150609409a7dd8ef50fa6b809d6c2.lua', -- The Forge x
     [7381705]    = 'https://api.luarmor.net/files/v4/loaders/19ceba576f0db00e9c0262328397980c.lua', -- Fisch COMPANION HATS
     [257648128]    = 'https://api.luarmor.net/files/v4/loaders/1f804abb7a3a05ecdde34a5977f4dfb6.lua', -- Ant Evolution
+    [911288936]    = 'https://api.luarmor.net/files/v4/loaders/66d1c8e4eaa6c2b1ac4f4803e27346c3.lua', -- SPIRIT BEASTS Cultivation Unbound
 }
 
 local url = communityCreators[creatorId]
