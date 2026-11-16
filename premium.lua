@@ -16,6 +16,7 @@ local communityCreators = {
     [911288936]    = 'https://api.luarmor.net/files/v4/loaders/66d1c8e4eaa6c2b1ac4f4803e27346c3.lua', -- SPIRIT BEASTS Cultivation Unbound
     [675425213]    = 'https://api.luarmor.net/files/v4/loaders/11112ec071715d338aabd3be3970253e.lua', -- ABILITIES CRAZY 8 Ball
     [890234173]    = 'https://api.luarmor.net/files/v4/loaders/9c87f82cbb67809c848c6e900a9ab979.lua', -- Volley Bomb
+    [109771238]    = 'https://api.luarmor.net/files/v4/loaders/712ffeae2fe1817989cb94bffb3f190f.lua', -- COBRA FERAL Animal Survival
 }
 
 local url = communityCreators[creatorId]
