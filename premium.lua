@@ -20,6 +20,7 @@ local communityCreators = {
     [4999963]    = 'https://api.luarmor.net/files/v4/loaders/90b79ec97d74b75e877b03d90190f57b.lua', -- Driving Empire LIMITED + DRIFT
     [93792414]    = 'https://api.luarmor.net/files/v4/loaders/94519636c5b35c647d68681046749e18.lua', -- Realistic Hunting
     [35566755]    = 'https://api.luarmor.net/files/v4/loaders/0e1a954a750fb778e150e9b80eed6762.lua', -- Vox Seas
+    [1091998987]    = 'https://api.luarmor.net/files/v4/loaders/06786b82552353fcf00c370e95365525.lua', -- Highway Racing
 }
 
 local url = communityCreators[creatorId]
