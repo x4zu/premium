@@ -18,6 +18,7 @@ local communityCreators = {
     [890234173]    = 'https://api.luarmor.net/files/v4/loaders/9c87f82cbb67809c848c6e900a9ab979.lua', -- Volley Bomb
     [109771238]    = 'https://api.luarmor.net/files/v4/loaders/712ffeae2fe1817989cb94bffb3f190f.lua', -- COBRA FERAL Animal Survival
     [4999963]    = 'https://api.luarmor.net/files/v4/loaders/90b79ec97d74b75e877b03d90190f57b.lua', -- Driving Empire LIMITED + DRIFT
+    [93792414]    = 'https://api.luarmor.net/files/v4/loaders/94519636c5b35c647d68681046749e18.lua', -- Realistic Hunting
 }
 
 local url = communityCreators[creatorId]
