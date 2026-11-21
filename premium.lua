@@ -21,6 +21,7 @@ local communityCreators = {
     [93792414]    = 'https://api.luarmor.net/files/v4/loaders/94519636c5b35c647d68681046749e18.lua', -- Realistic Hunting
     [35566755]    = 'https://api.luarmor.net/files/v4/loaders/0e1a954a750fb778e150e9b80eed6762.lua', -- Vox Seas
     [1091998987]    = 'https://api.luarmor.net/files/v4/loaders/06786b82552353fcf00c370e95365525.lua', -- Highway Racing
+    [35139043]    = 'https://api.luarmor.net/files/v4/loaders/97370eb2c2d88fd1c07263f0ecd24483.lua', -- RELEASE Anime Crusaders X
 }
 
 local url = communityCreators[creatorId]
