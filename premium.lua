@@ -30,7 +30,6 @@ if url then
     loadstring(game:HttpGet(url))()
 else
     print("[Nemesis] Not a premium game, checking keyless scripts...")
-    -- site first; GitHub copy as a backup if the site is down or over quota
     local sources = {
         "https://www.nemesishub.xyz/k",
         "https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua",
