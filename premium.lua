@@ -30,5 +30,18 @@ if url then
     loadstring(game:HttpGet(url))()
 else
     print("[Nemesis] Not a premium game, checking keyless scripts...")
-    loadstring(game:HttpGet("https://www.nemesishub.xyz/k"))()
+    -- site first; GitHub copy as a backup if the site is down or over quota
+    local sources = {
+        "https://www.nemesishub.xyz/k",
+        "https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua",
+    }
+    local ran = false
+    for _, src in ipairs(sources) do
+        local ok, body = pcall(function() return game:HttpGet(src) end)
+        if ok and type(body) == "string" and #body > 0 then
+            local fn = loadstring(body)
+            if fn then fn() ran = true break end
+        end
+    end
+    if not ran then warn("[Nemesis] Keyless loader unavailable, try again later.") end
 end
