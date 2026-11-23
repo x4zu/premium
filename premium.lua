@@ -30,5 +30,5 @@ if url then
     loadstring(game:HttpGet(url))()
 else
     print("[Nemesis] Not a premium game, checking keyless scripts...")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua"))()
+    loadstring(game:HttpGet("https://www.nemesishub.xyz/k"))()
 end
