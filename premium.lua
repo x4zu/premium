@@ -23,12 +23,10 @@ local communityCreators = {
     [1091998987]    = 'https://api.luarmor.net/files/v4/loaders/06786b82552353fcf00c370e95365525.lua', -- Highway Racing
     [35139043]    = 'https://api.luarmor.net/files/v4/loaders/97370eb2c2d88fd1c07263f0ecd24483.lua', -- RELEASE Anime Crusaders X
 }
-
 local function console()
     local ok, C = pcall(function() return loadstring(game:HttpGet("https://www.nemesishub.xyz/console.lua"))() end)
     return ok and type(C) == "table" and C or nil
 end
-
 local url = communityCreators[creatorId]
 if url then
     local C = console()
@@ -43,8 +41,6 @@ if url then
     fn()
     return
 end
-
--- keyless: the site endpoint first, the GitHub copy as a backup; both bring their own console
 local sources = {
     "https://www.nemesishub.xyz/k",
     "https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua",
