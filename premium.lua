@@ -29,5 +29,6 @@ if url then
     print("[Nemesis] Game supported! Loading premium script...")
     loadstring(game:HttpGet(url))()
 else
-    warn("[Nemesis] Unsupported game (creator " .. tostring(creatorId) .. ").")
+    print("[Nemesis] Not a premium game, checking keyless scripts...")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua"))()
 end
