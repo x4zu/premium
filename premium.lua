@@ -24,23 +24,37 @@ local communityCreators = {
     [35139043]    = 'https://api.luarmor.net/files/v4/loaders/97370eb2c2d88fd1c07263f0ecd24483.lua', -- RELEASE Anime Crusaders X
 }
 
+local function console()
+    local ok, C = pcall(function() return loadstring(game:HttpGet("https://www.nemesishub.xyz/console.lua"))() end)
+    return ok and type(C) == "table" and C or nil
+end
+
 local url = communityCreators[creatorId]
 if url then
-    print("[Nemesis] Game supported! Loading premium script...")
-    loadstring(game:HttpGet(url))()
-else
-    print("[Nemesis] Not a premium game, checking keyless scripts...")
-    local sources = {
-        "https://www.nemesishub.xyz/k",
-        "https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua",
-    }
-    local ran = false
-    for _, src in ipairs(sources) do
-        local ok, body = pcall(function() return game:HttpGet(src) end)
-        if ok and type(body) == "string" and #body > 0 then
-            local fn = loadstring(body)
-            if fn then fn() ran = true break end
-        end
+    local C = console()
+    local bar = C and C.bar("Nemesis Premium") or nil
+    local ok, source = pcall(function() return game:HttpGet(url) end)
+    local fn = ok and type(source) == "string" and #source > 0 and loadstring(source)
+    if not fn then
+        if bar then bar.fail("Could not load the script") end
+        return
     end
-    if not ran then warn("[Nemesis] Keyless loader unavailable, try again later.") end
+    if bar then bar.done() end
+    fn()
+    return
 end
+
+-- keyless: the site endpoint first, the GitHub copy as a backup; both bring their own console
+local sources = {
+    "https://www.nemesishub.xyz/k",
+    "https://raw.githubusercontent.com/x4zu/KeylessLoader/main/keyless.lua",
+}
+for _, src in ipairs(sources) do
+    local ok, body = pcall(function() return game:HttpGet(src) end)
+    if ok and type(body) == "string" and #body > 0 then
+        local fn = loadstring(body)
+        if fn then fn() return end
+    end
+end
+local C = console()
+if C then C.line(string.format("[Nemesis]: Unsupported game (creator %s)", tostring(creatorId)), C.RED) end
