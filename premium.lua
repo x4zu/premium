@@ -30,7 +30,7 @@ end
 local url = communityCreators[creatorId]
 if url then
     local C = console()
-    local bar = C and C.bar("Nemesis Premium") or nil
+    local bar = C and C.bar(C.gameName()) or nil
     local ok, source = pcall(function() return game:HttpGet(url) end)
     local fn = ok and type(source) == "string" and #source > 0 and loadstring(source)
     if not fn then
@@ -53,4 +53,4 @@ for _, src in ipairs(sources) do
     end
 end
 local C = console()
-if C then C.line(string.format("[Nemesis]: Unsupported game (creator %s)", tostring(creatorId)), C.RED) end
+if C then C.line(string.format("[%s]: Unsupported game (creator %s)", C.gameName(), tostring(creatorId)), C.RED) end
