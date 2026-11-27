@@ -1,5 +1,16 @@
--- discord : @x2zu 
--- ambil lah ambil idenya kontol, tapi kalo punya malu izin dlu idiot
+--[[
+__   __ _____  _______   _
+\ \ / // __  \|___  / | | |
+ \ V / `' / /'   / /| | | |
+ /   \   / /    / / | | | |
+/ /^\ \./ /___./ /__| |_| |
+\/   \/\_____/\_____/\___/
+
+          Created by: @x2zu
+      Discord: https://discord.com/invite/ZJFjVxFjwa
+  in the end you ended up here to take my idea
+punya ide kembangin idiot bukan copy paste bego idiotttttt
+]]
 local creatorId = game.CreatorId
 local communityCreators = {
     [8818124]    = 'https://api.luarmor.net/files/v4/loaders/3e087d3dde490fa19b372d861dcafeee.lua', -- Violance District
