@@ -1,3 +1,5 @@
+-- discord : @x2zu 
+-- ambil lah ambil idenya kontol, tapi kalo punya malu izin dlu idiot
 local creatorId = game.CreatorId
 local communityCreators = {
     [8818124]    = 'https://api.luarmor.net/files/v4/loaders/3e087d3dde490fa19b372d861dcafeee.lua', -- Violance District
